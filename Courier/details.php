@@ -1,6 +1,6 @@
 <html>
 	<link rel="stylesheet" type="text/css" href="css\footer.css">
-	<link rel="stylesheet" type="text/css" href="css\project.css">
+	<link rel="stylesheet" type="text/css" href="css\project9.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<style type="text/css">
 		.bs-example {
@@ -9,12 +9,21 @@
 		
 		body {
 			padding-top: 70px;
+		
+			}
+			.center{
+			text-align: center;
 		}
 	</style>
 <body>
-	<h1 class='header'>Shipment Details</h1>
+	<h1 class='center'>Shipment Details</h1>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav">
+                <a href="profile.php" class="nav-item nav-link">My Shipments</a>
+                <a href="transports.php" class="nav-item nav-link">My Transports</a>
+            </div>
+			
 			
 				<div class="navbar-nav ml-auto">
 					<a href="login.php" class="nav-item nav-link" onclick="logOut()">Log Out</a>

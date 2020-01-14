@@ -2,7 +2,7 @@
 <html>
 		
     <link rel="stylesheet" type="text/css" href="css\footer.css">
-    <link rel="stylesheet" type="text/css" href="css\project.css">
+    <link rel="stylesheet" type="text/css" href="css\project9.css">
 		
     <title>
         Register page

@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css\project9.css">
 <link rel="stylesheet" type="text/css" href="css\footer.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 	<style type="text/css">
 		.bs-example {
 			margin: 20px;
@@ -16,6 +17,7 @@
 	</style>
 
 <body>
+	
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="navbar-nav">
@@ -29,10 +31,10 @@
 				</div>
 			</div>
 		</nav>
-	<h1 class='center'>Add Transport</h1>
+	<h1 class='center'>Update Transport</h1>
 	<form class='center' method='post'>
 			
-		<span>Enter Date:</span> <input class='center' type="text" name="date"/><br>
+	<span>Enter Date:</span> <input class='center' type="text" name="date"/><br>
 			  
 		<span>Enter Delivery Date:</span> <input class='center' type="text" name="deliveryDate"/><br>
 		
@@ -40,7 +42,7 @@
 		
 		<span>Enter Weight:</span> <input class='center' type="text" name="weight"/><br>
 		
-		<span>Enter Dimensions:</span> <input class='center'  type="text" name="dimensions"/><br>
+		<span>Enter Dimensions:</span> <input class='center' type="text" name="dimensions"/><br>
 		
 		<span>Enter Delivery Address:</span> <input class='center' type="text" name="deliveryAddress"/><br>
 		
@@ -50,12 +52,12 @@
 		
 		<span>Enter Cost:</span> <input class='center' type="text" name="cost"/><br>
 		
-		<span>Enter Customer ID:</span> <input  class='center' type="text" name="customer_id"/><br>
-			  
-		<input type="submit" name="submit" class="center" value="Submit" /><br>
+		<span>Enter Customer ID:</span> <input class='center'  type="text" name="customer_id"/><br>
+<input type="submit" name="submit" class="center" value="Submit" /><br>
 		<input type="submit" name="cancel" class="center" value="Cancel" />
 	</form>
-	<br> <br> <br> <br>o
+<br> <br> <br> <br>
+</body>
 <footer>
     <br>
     <h5> ABC Courier COPYRIGHT © 2019. ALL RIGHTS RESERVED - DESIGNED BY Thanasis Bilero</h5>
@@ -65,7 +67,7 @@
 
 <?php
 
-
+$id = $_GET['transport_id'];
 if(isset($_POST['submit'])) { 
 	
 		$date = $_POST['date'];
@@ -81,7 +83,8 @@ if(isset($_POST['submit'])) {
 	
 
 		$connect = mysqli_connect ("localhost", "ddpms19460", "dpmsp@ss", "ddpms19460") or die("test");
-		$query = "INSERT INTO transports VALUES ( null,'$date', '$deliveryDate', '$type', '$weight', '$dimensions','$deliveryAddress','$takingAddress','$state','$cost','$customer_id')";
+		$query = "UPDATE transports SET date= '$date', deliveryDate= '$deliveryDate', type='$type', weight='$weight', dimensions='$dimensions',deliveryAddress='$deliveryAddress',
+		takingAddress='$takingAddress',state='$state',cost='$cost',customer_id='$customer_id'  WHERE id='$id' ";
 		
 		$result = mysqli_query ($connect, $query);
 		

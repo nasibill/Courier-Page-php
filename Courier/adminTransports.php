@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css\footer.css">
-    <link rel="stylesheet" type="text/css" href="css\project.css">
+    <link rel="stylesheet" type="text/css" href="css\project9.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <style type="text/css">
@@ -88,7 +88,7 @@ if(mysqli_num_rows($result) >0){
 					<td>".$row['deliveryAddress']."</td>
 					<td>".$row['state']."</td>
 					<td>".$row['cost']."</td>
-					<td><a href='updateShipment.php?shipment_id={$row['id']}'>Update</a></td>
+					<td><a href='updateTransport.php?transport_id={$row['id']}'>Update</a></td>
 					<td><input type='submit' name='delete' value='Delete'/></td>
 					<td><input type='hidden' name='value' value='$shipmentId'/></td>
 				</form>

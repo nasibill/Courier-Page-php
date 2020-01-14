@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css\project.css">
+<link rel="stylesheet" type="text/css" href="css\project9.css">
 <link rel="stylesheet" type="text/css" href="css\footer.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <style type="text/css">
@@ -59,8 +59,10 @@
 		
 		<span>Enter Customer ID:</span> <input class='center' type="text" name="customer_id"/><br>
 			  
-		<input type="submit" name="submit" class="btn" value="Submit" />
-		<input type="submit" name="cancel" class="btn" value="Cancel" />
+		
+		
+		<input type="submit" name="submit" class="center" value="Submit" /><br>
+		<input type="submit" name="cancel" class="center" value="Cancel" />
 	</form>
    <br> <br> <br> <br>
 </body>
